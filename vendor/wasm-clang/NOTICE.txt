@@ -1,0 +1,17 @@
+WebAssembly C and C++ toolchain
+
+The clang and lld WebAssembly executables, memfs, sysroot.tar and shared.js
+come from the WebAssembly Community Group demonstration
+https://github.com/binji/wasm-clang/tree/648c4a89997a351eef75cdaec3ef5b89d4937dec .
+The five *.gz.b64.txt files contain base64-encoded gzip data.
+
+Copyright 2020 WebAssembly Community Group participants.
+The demonstration is distributed under the Apache License, Version 2.0
+(LICENSE). LLVM, Clang, LLD and libc++ license texts are in LICENSE.llvm.
+The sysroot also contains WASI libc, musl and their dependencies. See the
+accompanying wasi license and copyright files. Its dlmalloc component is
+by Doug Lea and was released to the public domain under CC0 1.0.
+
+support.js is the demonstration's shared.js with API.MemFS, API.App and
+API.Tar exported for a separate in-memory compiler and test-case host.
+The compiler, linker, memfs binary and sysroot archive are unmodified.
